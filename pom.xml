@@ -30,14 +30,14 @@ DO NOT MODIFIY - GENERATED CODE
     </developer>
   </developers>
   <properties>
-    <animationloop.basedir>${project.basedir}</animationloop.basedir>
+    <maven.compiler.target>1.9</maven.compiler.target>
+    <maven.compiler.source>1.9</maven.compiler.source>
     <polyglot.dump.pom>pom.xml</polyglot.dump.pom>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+    <protected.basedir>${project.basedir}</protected.basedir>
   </properties>
   <build>
-    <sourceDirectory>src</sourceDirectory>
+    <sourceDirectory>${protected.basedir}</sourceDirectory>
     <defaultGoal>package</defaultGoal>
     <finalName>protected</finalName>
     <pluginManagement>

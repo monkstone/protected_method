@@ -16,7 +16,7 @@ project 'protected_method', 'https://github.com/monkstone/protected_method' do
   end
 
   properties(
-    'animationloop.basedir' => '${project.basedir}',
+    'protected.basedir' => '${project.basedir}',
     'maven.compiler.source' => '1.8',
     'project.build.sourceEncoding' => 'UTF-8',
     'maven.compiler.target' => '1.8',
@@ -34,7 +34,7 @@ project 'protected_method', 'https://github.com/monkstone/protected_method' do
   end
   build do
     default_goal 'package'
-    source_directory 'src'
+    source_directory '${protected.basedir}'
     final_name 'protected'
   end
 end

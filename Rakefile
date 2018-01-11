@@ -1,9 +1,19 @@
-# -*- encoding: utf-8 -*-
-task default: [:compile, :test]
+require 'fileutils'
+
+task default: [:setup, :compile, :install, :test]
+
+desc 'Setup'
+task :setup do
+  sh 'mkdir -p lib'
+end
 
 desc 'Compile'
 task :compile do
   sh 'mvn package'
+end
+
+desc 'Install'
+task :install do
   sh 'mv target/protected.jar lib'
 end
 

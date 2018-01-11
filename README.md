@@ -1,4 +1,6 @@
 # protected_method
+[![Travis CI](https://travis-ci.org/monkstone/protected_method.svg)](https://monkstone/protected_method)
+
 Since JDK9 there is a need for java integration test with jruby, in this example we test the ability to call an inherited / protected java method from jruby.
 
 Use rake to compile and run test.

@@ -6,5 +6,6 @@ rvm:
   - jruby-9.1.15.0
 jdk:
   - oraclejdk8
+  - oraclejdk9
 os:
   - linux
